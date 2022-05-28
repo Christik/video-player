@@ -25,7 +25,7 @@
     &_range { 
         flex-grow: 1;
         padding-left: .6rem;
-        padding-right: .6rem;
+        padding-right: 0;
     }
 
     input[type="range"] {
@@ -35,8 +35,12 @@
 .controls__time {
     font-size: .6rem;
     font-weight: 500;
-    margin-left: .5rem;
     white-space: nowrap;
     color: @color-yellow;
     letter-spacing: .06em;
+    text-align: left;
+    min-width: 3rem;
+    width: 3rem;
+    padding: 0 0 0 .5rem;
+    display: block;
 }

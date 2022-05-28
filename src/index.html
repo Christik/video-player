@@ -10,20 +10,29 @@
     <div class="player">
         <div class="player__screen">
             <div class="video-responsive">                
-                <video src="./video/mr-bin.mp4"></video>
+                <video src="./video/mr-bin.mp4"
+                       type="video/mp4"></video>
             </div>
         </div><!--.player__screen-->
 
         <div class="controls player__controls">
             <div class="controls-group constols-group_buttons">
                 <button type="button"
-                        class="button button_play">Play</button>
+                        class="button button_play"
+                        data-play>Play</button>
                 <button type="button"
-                        class="button button_stop">Stop</button>
+                        class="button button_stop"
+                        data-stop>Stop</button>
             </div>
             <div class="controls-group controls-group_range">
-                <input type="range" class="range">
-                <div class="controls__time">00:00</div>
+                <input type="range"
+                       class="range"
+                       value="0"
+                       min="0"
+                       max="100"
+                       data-range>
+                <div class="controls__time"
+                     data-time>00:00</div>
             </div>
         </div><!--.player__controls-->
     </div><!--.player-->
