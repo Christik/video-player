@@ -1,0 +1,69 @@
+//
+// Player
+// 
+
+.player {
+    width: 100%;
+    max-width: 30rem;
+    background: @color-bg;
+    border-radius: .25rem;
+    position: relative;
+    border: solid 2px fade(#fff, 8%);
+    border-top-color: fade(#fff, 20%);
+    border-bottom-color: fade(#fff, 5%);
+    box-shadow: 0 2px 0 fade(#000, 30%);
+    padding: 1rem;
+    position: relative;
+
+    &:before, 
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    &:before { 
+        left: 0;
+        bottom: 0; 
+        width: 100%;
+        height: 80%;
+        background: linear-gradient(fade(#000, 0%), fade(#000, 20%));
+    }
+
+    &:after {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,50%);
+        width: 100%;
+        height: 1.5rem;
+        border-radius: 50%;
+        background: radial-gradient(fade(#000, 100%), fade(#000, 0%));
+        filter: blur(.5rem);
+        z-index: -1;
+    }
+}
+.player__screen {
+    position: relative;
+    background: #000;
+    border-radius: .15rem;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0; 
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        border: solid 1px fade(#565676, 70%);
+        border-top: none;
+        border-bottom: none;
+        box-shadow: inset 0 -2px 1px fade(#565676, 80%);
+    }
+}
+.player__controls {
+    margin-top: 1rem;
+}

@@ -1,0 +1,42 @@
+//
+// Controls
+//
+
+.controls {
+    display: flex;
+}
+.controls-group {
+    height: 2.8rem;
+    border-radius: 1.4rem;
+    padding: .4rem;
+    background: linear-gradient(fade(#000, 60%), fade(#000, 20%));
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 -2px fade(#fff, 20%), inset 0 2px fade(#000, 50%);
+
+    &:not(:first-child) {
+        margin-left: .4rem;
+    }
+
+    .button:not(:first-child) {
+        margin-left: .4rem;
+    }
+
+    &_range { 
+        flex-grow: 1;
+        padding-left: .6rem;
+        padding-right: .6rem;
+    }
+
+    input[type="range"] {
+        flex-grow: 1;
+    }
+}
+.controls__time {
+    font-size: .6rem;
+    font-weight: 500;
+    margin-left: .5rem;
+    white-space: nowrap;
+    color: @color-yellow;
+    letter-spacing: .06em;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео плеер</title>
+</head>
+<body>
+    <div class="player">
+        <div class="player__screen">
+            <div class="video-responsive">                
+                <video src="./video/mr-bin.mp4"></video>
+            </div>
+        </div><!--.player__screen-->
+
+        <div class="controls player__controls">
+            <div class="controls-group constols-group_buttons">
+                <button type="button"
+                        class="button button_play">Play</button>
+                <button type="button"
+                        class="button button_stop">Stop</button>
+            </div>
+            <div class="controls-group controls-group_range">
+                <input type="range" class="range">
+                <div class="controls__time">00:00</div>
+            </div>
+        </div><!--.player__controls-->
+    </div><!--.player-->
+</body>
+</html>
